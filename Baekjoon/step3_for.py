@@ -84,19 +84,47 @@
 #     total+=i
 # print(total)
 
-# 11720. 숫자의 합
+# # 11720. 숫자의 합
 
-N = int(input())
+# N = int(input())
+# A = list(input())
+# T = 0
 
-for i in range(N):
-    i = input().split()
-    i = int(i)
-
-print(sum(N))
-
-# N = input()
-# N = str(range(N))
 
 # for i in range(N):
-#     N = 
-# T = input()
+#     A[i] = int(A[i])
+#     T += A[i]
+
+# print(T)
+
+# # 11721. 열개씩 끊어 출력하기
+
+# S = input()
+# L = len(S)
+# N = list(range(L//10))
+# T=[]
+
+# for i in N:
+#     T += [i*10]
+
+# for i in T:
+#     P = S[i:(i+10)]
+#     print(P)
+
+# if L%10 != 0:
+#     print(S[-(L%10):])
+
+# 15552. 빠른 A+B
+
+import sys
+
+T = int(sys.stdin.readline())
+A = 0
+
+for i in range(T):
+    B = sys.stdin.readline().split()
+    for i in range(2):
+        B[i] = int(B[i])
+        A += B[i]
+    print(A)
+    A = 0
