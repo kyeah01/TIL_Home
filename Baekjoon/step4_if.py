@@ -68,25 +68,23 @@
 # for i in range(C):
 #     print(F[i], end ='% \n')
 
-# 1110. 더하기 사이클
+# # 1110. 더하기 사이클
 
-import sys
+# C = input()
+# N = C
+# A = 0
+# ct = 0 
 
-C = sys.stdin.readline()
-N = C
-A = 0
-ct = 0 
-
-while True:
-    if int(N) < 10:
-        N = str(N) + str(N)
-    else:
-        ct += 1
-        A = int(N[0]) + int(N[1])
-        if len(str(A)) == 2:
-            N = str(N[1]) + str(A)[1]
-        else:
-            N = str(N[1]) + str(A)
-    if int(C) == int(N):
-        break
-print(ct)
+# while True:
+#     if int(N) < 10:
+#         N = str(int(N)) + str(int(N))
+#         ct += 1
+#     else:
+#         ct += 1
+#         A = int(N[0]) + int(N[1])
+#         if len(str(A)) == 2:
+#             N = str(N[1]) + str(A)[1]
+#         else:
+#             N = str(N[1]) + str(A)
+#     if int(C) == int(N): break
+# print(ct)
