@@ -62,19 +62,38 @@
 #     print(count)
 #     count = 0
 
-# 10250. ACM 호텔
+# # 10250. ACM 호텔
+
+# T = int(input())
+
+# for i in range(T):
+#     H, W, N = map(int,input().split())
+#     if N % H == 0:
+#         if (N//H) < 10:
+#             print(f'{H}0{N//H}')
+#         else:
+#             print(f'{H}{N//H}')
+#     else:
+#         if (N//H+1) < 10:
+#             print(f'{N%H}0{(N//H)+1}')
+#         else:
+#             print(f'{N%H}{(N//H)+1}')
+
+# 2775. 부녀회장이 될테야
 
 T = int(input())
+S = []
 
 for i in range(T):
-    H, W, N = map(int,input().split())
-    if N % H == 0:
-        if (N//H) < 10:
-            print(f'{H}0{N//H}')
-        else:
-            print(f'{H}{N//H}')
-    else:
-        if (N//H+1) < 10:
-            print(f'{N%H}0{(N//H)+1}')
-        else:
-            print(f'{N%H}{(N//H)+1}')
+    k = int(input())
+    n = int(input())
+    for j in range(k):              # k는 층수
+        S.append([])
+        for b in range(n):          # n은 호수
+            S[i].append([])
+            if j == 0:
+                S[j][0].append(b+1)
+            else:
+                for c in range(b):
+                    S[j].appeend(S[j-1][c])
+    print(S)
