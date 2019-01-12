@@ -81,19 +81,16 @@
 
 # 2775. 부녀회장이 될테야
 
-T = int(input())
-S = []
+# T = int(input())
 
-for i in range(T):
-    k = int(input())
-    n = int(input())
-    for j in range(k):              # k는 층수
-        S.append([])
-        for b in range(n):          # n은 호수
-            S[i].append([])
-            if j == 0:
-                S[j][0].append(b+1)
-            else:
-                for c in range(b):
-                    S[j].appeend(S[j-1][c])
-    print(S)
+# N = input()
+# B = ['0', '1','2','3','4','5','6','7','8','9']
+# C = list(range(10))
+# for i in B:
+#     C[int(i)] = N.count(i)
+# if (C[6]+C[9]) % 2 == 0:
+#     C[6] = (C[6] + C[9])//2
+# else:
+#     C[6] = (C[6] + C[9])//2 + 1
+# C[9] = 0
+# print(max(C))
